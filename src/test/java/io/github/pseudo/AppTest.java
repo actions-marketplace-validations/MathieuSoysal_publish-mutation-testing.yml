@@ -10,4 +10,9 @@ public class AppTest {
         assertTrue(true);
     }
 
+    @Test
+    public void shouldAdd() {
+        assertTrue(App.add(1, 2) == 3);
+    }
+
 }
