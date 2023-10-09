@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: GuillaumeFalourd/assert-command-line-output@v2
+      - uses: GuillaumeFalourd/assert-command-line-output@v3
         with:
           command_line: cat pom.xml
           contains: JAVAVERSION
@@ -50,7 +50,7 @@ jobs:
           without-deploy: true
           without-checkout: true
 
-      - uses: GuillaumeFalourd/assert-command-line-output@v2
+      - uses: GuillaumeFalourd/assert-command-line-output@v3
         with:
           command_line: cat target/pit-reports/index.html
           contains: Mutation
