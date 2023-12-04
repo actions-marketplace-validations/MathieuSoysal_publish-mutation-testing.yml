@@ -79,7 +79,7 @@ runs:
 
     - name: Deploy to GitHub Page 🚀 with Maven
       if: ${{ inputs.without-deploy == 'false' }}
-      uses: JamesIves/github-pages-deploy-action@v4.4.3
+      uses: JamesIves/github-pages-deploy-action@v4.5.0
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
         branch: ${{ inputs.github-page-branch }}
